@@ -154,7 +154,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yuelin" /* TODO: Update with your actual LinkedIn URL */
+              href="https://www.linkedin.com/in/amanda-yuelin/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-5 py-2.5 text-sm font-medium text-slate-300 transition-all hover:border-violet-400/50 hover:bg-violet-400/10 hover:text-violet-400 hover:shadow-lg hover:shadow-violet-400/10"
@@ -163,7 +163,7 @@ export default function Hero() {
               LinkedIn
             </a>
             <a
-              href="mailto:yuelin@example.com" /* TODO: Update with your actual email */
+              href="mailto:amandabugfree@gmail.com"
               className="group flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800/50 px-5 py-2.5 text-sm font-medium text-slate-300 transition-all hover:border-emerald-400/50 hover:bg-emerald-400/10 hover:text-emerald-400 hover:shadow-lg hover:shadow-emerald-400/10"
             >
               <EmailIcon />
