@@ -14,6 +14,41 @@ interface Project {
 /* TODO: Update projects with your actual details */
 const projects: Project[] = [
   {
+    title: "Cloud Events Platform (Control, Ingestion, Routing, Actions)",
+    description:
+      "Contributed for multiple years across a distributed event platform composed of control, ingestion, routing, and action-execution services. Implemented and maintained rule lifecycle APIs, rule-cache synchronization, and high-throughput event pipelines that convert incoming audit/events into action messages. Worked on reliability features including retry streams, backoff policies, health checks, dynamic region/cert loading, and production telemetry to keep event delivery resilient at scale.",
+    tags: [
+      "Java",
+      "Dropwizard",
+      "Guice",
+      "Kafka",
+      "Rule Engine",
+      "Event-Driven Architecture",
+      "Observability",
+      "Reliability",
+    ],
+    type: "industry",
+    emoji: "📡",
+  },
+  {
+    title: "Large-Scale Inventory Database Optimization",
+    description:
+      "Owned inventory database optimization in a shared multi-tenant Oracle environment. Led investigation of heavy merge/query workloads, designed and implemented scheduled retention-based cleanup procedures for large source/report tables, and coordinated table redefinition rollout. Worked across the Kotlin/Spring worker pipeline (collectors, ingestors, and reporting jobs) to make data lifecycle controls reliable in production. Delivered sustained impact by reducing allocated PDB space by about 90% and lowering I/O throughput from ~5 GB/s to ~250 MB/s (~95% improvement).",
+    tags: [
+      "SQL",
+      "PL/SQL",
+      "Kotlin",
+      "Spring Boot",
+      "Oracle Database",
+      "Flyway",
+      "Performance Tuning",
+      "Data Lifecycle",
+      "Automation",
+    ],
+    type: "industry",
+    emoji: "🗄️",
+  },
+  {
     title: "Cloud Object Storage — Metadata Service",
     description:
       "Designed and implemented a distributed metadata service handling billions of objects across global regions. Built with Java and gRPC, featuring sharded storage, cross-region replication, and sub-millisecond lookup latency.",
