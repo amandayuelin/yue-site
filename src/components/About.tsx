@@ -68,7 +68,7 @@ export default function About() {
                   </p>
                   <p>
                     <span className="terminal-highlight">Focus:</span>{" "}
-                    Event Platforms, Ownership Systems, Cloud Infrastructure
+                    Event-Driven Systems (Kafka), Object Metadata Storage, Ownership Platforms
                   </p>
                 </div>
                 <div className="mt-4">
@@ -102,22 +102,26 @@ export default function About() {
               className="flex flex-col justify-center space-y-5"
             >
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                I&apos;m a software engineer who loves building backend platforms that
-                have to be both fast and dependable. At Oracle Cloud
-                Infrastructure, I work across event processing, ownership
-                lookup, and metadata systems where reliability, observability,
-                and scale matter every day.
+                I lead backend platform initiatives where correctness,
+                reliability, and scalability are foundational requirements. At
+                Oracle Cloud Infrastructure, I drive architecture and delivery
+                across event processing, ownership lookup, and object metadata
+                systems that support critical cloud operations at global scale.
               </p>
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                My work spans rule-driven event pipelines, API and service
-                design, and data lifecycle automation. I enjoy diving into
-                complex workflows, simplifying them, and turning them into
-                maintainable systems that teams can trust in production.
+                My work spans rule-driven Kafka pipelines, distributed API and
+                data model design, and lifecycle automation for large
+                production datasets. I focus on turning ambiguous, cross-team
+                problems into clear technical strategy and executable plans, and
+                on driving them end-to-end from design review through
+                production hardening.
               </p>
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                Outside backend systems, I also enjoy front-end engineering and
-                product polish. I care about building technology that is not
-                only technically strong, but also genuinely useful to people.
+                Beyond implementation, I invest in operational excellence:
+                observability, testing quality, release safety, and long-term
+                maintainability. I care about building systems that are not only
+                technically strong, but also create leverage for partner teams
+                and deliver real customer impact.
               </p>
 
               {/* Fun stats */}

@@ -17,11 +17,12 @@ const experiences: ExperienceItem[] = [
     role: "Software Engineer",
     period: "2021 — Present",
     description: [
-      "Built and operated distributed backend services for OCI events, object metadata, and ownership domains, including control, ingestion, routing, and action-delivery flows.",
-      "Implemented resilient event processing patterns such as retry queues, backoff handling, dynamic SSL/certificate reload, and production monitoring for high-throughput pipelines.",
-      "Owned and evolved a Tier-1 ownership lookup platform with REST APIs and multi-source resolution logic for hosts, services, and other resource types.",
-      "Led major database optimization initiatives by implementing automated cleanup and lifecycle controls, delivering substantial reductions in storage footprint and I/O load.",
-      "Improved release reliability through integration testing and CI triage across Java/Kotlin multi-module builds and cross-service dependencies.",
+      "On the Object Storage metadata service team, built and maintained backend APIs and workflows across business-logic and dataplane layers.",
+      "Implemented and hardened critical flows including load shedding behavior, object rename lifecycle handling, and internal pagination for large-object retrieval paths.",
+      "Drove integration-test quality for metadata APIs, including end-to-end validation for API behavior, error handling, and configuration-sensitive scenarios.",
+      "Implemented resilient event platform capabilities such as retry queues, backoff handling, dynamic SSL/certificate reload, and production monitoring for high-throughput pipelines.",
+      "Owned and evolved a Tier-1 ownership lookup platform, building APIs and multi-source ownership resolution workflows used by security and operations tooling.",
+      "Led a major inventory database optimization effort by implementing scheduled cleanup and lifecycle controls, reducing PDB space by about 90% and cutting I/O throughput by about 95% (from ~5 GB/s to ~250 MB/s).",
     ],
     tags: [
       "Java",
