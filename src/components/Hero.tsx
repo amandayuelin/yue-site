@@ -2,14 +2,17 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import ParticleCanvas from "./ParticleCanvas";
 
 const titles = [
   "Software Engineer",
-  "Distributed Systems",
-  "Cloud Infrastructure",
-  "Full Stack Developer",
+  "Distributed Systems Builder",
+  "Cloud Platform Engineer",
+  "Event-Driven Architect",
 ];
+
+const PROFILE_IMAGE_PATH = "/amanda-profile.jpg";
 
 function useTypewriter(words: string[], typingSpeed = 80, deletingSpeed = 50, pauseTime = 2000) {
   const [text, setText] = useState("");
@@ -91,6 +94,30 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          {/* Profile image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.15, duration: 0.6, ease: "easeOut" }}
+            className="mx-auto mb-6"
+          >
+            <div className="relative mx-auto h-32 w-32 sm:h-36 sm:w-36 md:h-40 md:w-40">
+              <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-xl" />
+              <div className="relative h-full w-full overflow-hidden rounded-full border border-cyan-400/40 bg-slate-900/60 p-1 shadow-lg shadow-cyan-400/10">
+                <div className="relative h-full w-full overflow-hidden rounded-full">
+                  <Image
+                    src={PROFILE_IMAGE_PATH}
+                    alt="Yue (Amanda) Lin profile photo"
+                    fill
+                    sizes="(max-width: 768px) 160px, 180px"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -132,9 +159,9 @@ export default function Hero() {
             transition={{ delay: 1, duration: 0.6 }}
             className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-slate-500 md:text-lg"
           >
-            Building scalable systems that power the cloud.
+            Building resilient cloud platforms across events, ownership, and metadata systems.
             <br />
-            Passionate about elegant code and distributed architectures.
+            I turn complex infrastructure problems into reliable, scalable products.
           </motion.p>
 
           {/* Social links */}

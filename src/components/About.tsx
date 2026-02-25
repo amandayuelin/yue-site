@@ -62,14 +62,13 @@ export default function About() {
                     <span className="terminal-highlight">Role:</span>{" "}
                     Software Engineer
                   </p>
-                  {/* TODO: Update location */}
                   <p>
                     <span className="terminal-highlight">Location:</span>{" "}
-                    San Francisco Bay Area, CA
+                    Seattle Area, WA
                   </p>
                   <p>
                     <span className="terminal-highlight">Focus:</span>{" "}
-                    Distributed Systems, Cloud Infra
+                    Event Platforms, Ownership Systems, Cloud Infrastructure
                   </p>
                 </div>
                 <div className="mt-4">
@@ -78,7 +77,7 @@ export default function About() {
                 </div>
                 <div className="terminal-output">
                   <span className="terminal-string">
-                    [&quot;Java&quot;, &quot;C++&quot;, &quot;Go&quot;, &quot;Python&quot;, &quot;TypeScript&quot;, &quot;Swift&quot;]
+                    [&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;, &quot;TypeScript&quot;, &quot;Python&quot;, &quot;SQL&quot;]
                   </span>
                 </div>
                 <div className="mt-4">
@@ -87,7 +86,7 @@ export default function About() {
                 </div>
                 <div className="terminal-output">
                   <span className="terminal-string">
-                    &quot;Building systems that scale to millions of users&quot;
+                    &quot;Building resilient systems that scale across regions and teams&quot;
                   </span>
                 </div>
                 <div className="mt-2">
@@ -102,33 +101,32 @@ export default function About() {
               variants={itemVariants}
               className="flex flex-col justify-center space-y-5"
             >
-              {/* TODO: Customize your personal description below */}
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                Hi there! I&apos;m a software engineer with a passion for building
-                robust, high-performance distributed systems. I thrive on
-                solving complex engineering challenges at scale — from designing
-                metadata services that handle billions of objects to optimizing
-                data plane performance at the microsecond level.
+                I&apos;m a software engineer who loves building backend platforms that
+                have to be both fast and dependable. At Oracle Cloud
+                Infrastructure, I work across event processing, ownership
+                lookup, and metadata systems where reliability, observability,
+                and scale matter every day.
               </p>
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                When I&apos;m not deep in systems code, you&apos;ll find me exploring
-                the latest in full-stack web development, tinkering with iOS
-                apps, or diving into open-source projects. I believe great
-                engineering is both an art and a science.
+                My work spans rule-driven event pipelines, API and service
+                design, and data lifecycle automation. I enjoy diving into
+                complex workflows, simplifying them, and turning them into
+                maintainable systems that teams can trust in production.
               </p>
               <p className="text-base leading-relaxed text-slate-400 md:text-lg">
-                I&apos;m always excited to collaborate on innovative projects and
-                connect with fellow engineers. Let&apos;s build something amazing
-                together!
+                Outside backend systems, I also enjoy front-end engineering and
+                product polish. I care about building technology that is not
+                only technically strong, but also genuinely useful to people.
               </p>
 
               {/* Fun stats */}
               <div className="grid grid-cols-2 gap-4 pt-4 sm:grid-cols-4">
                 {[
-                  { value: "6+", label: "Languages" },
+                  { value: "50+", label: "Regions Impacted" },
+                  { value: "3", label: "Core Platforms" },
+                  { value: "95%", label: "Peak I/O Reduction" },
                   { value: "∞", label: "Curiosity" },
-                  { value: "☕", label: "Fuel" },
-                  { value: "🚀", label: "Goal" },
                 ].map((stat) => (
                   <div
                     key={stat.label}
