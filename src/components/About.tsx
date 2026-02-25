@@ -45,7 +45,7 @@ export default function About() {
                 <span className="terminal-dot bg-[#febc2e]" />
                 <span className="terminal-dot bg-[#28c840]" />
                 <span className="ml-4 text-xs text-slate-500">
-                  ~/yue-lin — zsh
+                  ~/amanda-lin — zsh
                 </span>
               </div>
               <div className="terminal-body space-y-3 text-sm leading-7">
@@ -56,7 +56,7 @@ export default function About() {
                 <div className="terminal-output">
                   <p>
                     <span className="terminal-highlight">Name:</span>{" "}
-                    Yue Lin
+                    Amanda (Yue Lin)
                   </p>
                   <p>
                     <span className="terminal-highlight">Role:</span>{" "}

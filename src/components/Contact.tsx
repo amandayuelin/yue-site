@@ -171,7 +171,7 @@ export default function Contact() {
               <span className="text-cyan-400/60">/&gt;</span>
             </p>
             <p className="font-mono text-sm text-slate-600">
-              &copy; {new Date().getFullYear()} Yue Lin. All rights reserved.
+              &copy; {new Date().getFullYear()} Amanda Lin. All rights reserved.
             </p>
           </div>
         </div>

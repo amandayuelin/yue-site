@@ -12,7 +12,7 @@ const titles = [
   "Event-Driven Architect",
 ];
 
-const PROFILE_IMAGE_PATH = "/amanda-profile.jpg";
+const PROFILE_IMAGE_PATH = "/amanda-profile-v2.jpg";
 
 function useTypewriter(words: string[], typingSpeed = 80, deletingSpeed = 50, pauseTime = 2000) {
   const [text, setText] = useState("");
@@ -107,7 +107,7 @@ export default function Hero() {
                 <div className="relative h-full w-full overflow-hidden rounded-full">
                   <Image
                     src={PROFILE_IMAGE_PATH}
-                    alt="Yue (Amanda) Lin profile photo"
+                    alt="Amanda Lin profile photo"
                     fill
                     sizes="(max-width: 768px) 160px, 180px"
                     className="object-cover"
@@ -135,8 +135,17 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
             className="gradient-text mb-6 text-5xl font-bold tracking-tight sm:text-6xl md:text-8xl"
           >
-            Yue Lin
+            Amanda Lin
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.55, duration: 0.5 }}
+            className="mb-6 text-xs font-mono tracking-wide text-slate-500 md:text-sm"
+          >
+            Amanda (Yue Lin)
+          </motion.p>
 
           {/* Typewriter */}
           <motion.div
