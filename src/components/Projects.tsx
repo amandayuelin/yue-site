@@ -14,6 +14,22 @@ interface Project {
 /* TODO: Update projects with your actual details */
 const projects: Project[] = [
   {
+    title: "Resource Ownership Lookup Platform",
+    description:
+      "Owned and evolved a long-running ownership-lookup platform used by security workflows to resolve team ownership for infrastructure resources. Designed a layered ownership resolution flow (direct mapping, tenancy/compartment inference, claimed ownership data, hostname/hostclass fallbacks, and manual overrides), integrated identity/permissions/team-directory dependencies, and built scheduled data replication and quality checks for multi-region reliability. Improved lookup coverage, reduced unresolved-owner cases, and strengthened observability with source-level metrics and error classification.",
+    tags: [
+      "Java",
+      "Dropwizard",
+      "Data Pipelines",
+      "Service Integration",
+      "Reliability",
+      "Observability",
+      "API Design",
+    ],
+    type: "industry",
+    emoji: "🧭",
+  },
+  {
     title: "Cloud Events Platform (Control, Ingestion, Routing, Actions)",
     description:
       "Contributed for multiple years across a distributed event platform composed of control, ingestion, routing, and action-execution services. Implemented and maintained rule lifecycle APIs, rule-cache synchronization, and high-throughput event pipelines that convert incoming audit/events into action messages. Worked on reliability features including retry streams, backoff policies, health checks, dynamic region/cert loading, and production telemetry to keep event delivery resilient at scale.",
