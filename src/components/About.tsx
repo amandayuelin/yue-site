@@ -127,19 +127,20 @@ export default function About() {
               {/* Fun stats */}
               <div className="grid grid-cols-2 gap-4 pt-4 sm:grid-cols-4">
                 {[
-                  { value: "📨 Billion+", label: "Events / Day" },
-                  { value: "🧩 3", label: "Tier-1 Platforms" },
-                  { value: "🌍 50+", label: "Regions Supported" },
-                  { value: "🛡️ 24/7", label: "Reliability Mindset" },
+                  { icon: "📨", value: "Billion+", label: "Events / Day" },
+                  { icon: "🧩", value: "3", label: "Tier-1 Platforms" },
+                  { icon: "🌍", value: "50+", label: "Regions Supported" },
+                  { icon: "🛡️", value: "24/7", label: "Reliability Mindset" },
                 ].map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-lg border border-slate-800 bg-slate-900/50 p-4 text-center"
+                    className="rounded-lg border border-slate-800 bg-slate-900/50 p-5 text-center"
                   >
-                    <div className="text-2xl font-bold text-cyan-400">
+                    <div className="text-xl leading-none">{stat.icon}</div>
+                    <div className="mt-2 text-4xl font-bold leading-none text-cyan-400">
                       {stat.value}
                     </div>
-                    <div className="mt-1 text-xs text-slate-500">
+                    <div className="mt-2 min-h-[2.5rem] text-xs leading-5 text-slate-500">
                       {stat.label}
                     </div>
                   </div>
