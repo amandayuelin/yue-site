@@ -61,7 +61,7 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-20 md:py-24">
+    <section id="contact" className="relative py-14 md:py-16">
       {/* Background accent */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/3 blur-3xl" />

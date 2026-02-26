@@ -144,7 +144,7 @@ function GitHubSmallIcon() {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-20 md:py-24">
+    <section id="projects" className="relative py-14 md:py-16">
       {/* Background accent */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute right-1/4 top-0 h-[600px] w-[600px] rounded-full bg-violet-500/3 blur-3xl" />
@@ -171,7 +171,7 @@ export default function Projects() {
 
           <motion.p
             variants={cardVariants}
-            className="mb-16 max-w-2xl text-base text-slate-500 md:text-lg"
+            className="mb-10 max-w-2xl text-base text-slate-500 md:text-lg"
           >
             A mix of large-scale industry systems and personal passion projects.
             Industry projects show brief descriptions only due to proprietary nature.
@@ -248,7 +248,7 @@ export default function Projects() {
           {/* GitHub CTA */}
           <motion.div
             variants={cardVariants}
-            className="mt-16 text-center"
+            className="mt-10 text-center"
           >
             <a
               href="https://github.com/amandayuelin"

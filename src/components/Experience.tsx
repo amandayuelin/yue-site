@@ -76,7 +76,7 @@ const itemVariants = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-20 md:py-24">
+    <section id="experience" className="relative py-14 md:py-16">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           variants={containerVariants}

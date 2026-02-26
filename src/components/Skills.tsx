@@ -115,7 +115,7 @@ const badgeVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-20 md:py-24">
+    <section id="skills" className="relative py-14 md:py-16">
       {/* Subtle background accent */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-0 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-cyan-500/3 blur-3xl" />
