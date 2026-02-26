@@ -12,7 +12,7 @@ const titles = [
   "Event-Driven Architect",
 ];
 
-const PROFILE_IMAGE_PATH = "/amanda-profile-v2.jpg";
+const PROFILE_IMAGE_PATH = "/amanda-profile-v3.jpg";
 
 function useTypewriter(words: string[], typingSpeed = 80, deletingSpeed = 50, pauseTime = 2000) {
   const [text, setText] = useState("");

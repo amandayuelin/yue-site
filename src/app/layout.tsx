@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yue Lin | Software Engineer",
+  title: "Amanda Lin | Software Engineer",
   description:
-    "Personal portfolio of Yue Lin — Software Engineer specializing in distributed systems, cloud infrastructure, and full-stack development.",
+    "Personal portfolio of Amanda Lin — Software Engineer specializing in distributed systems, cloud infrastructure, and full-stack development.",
   keywords: [
     "Software Engineer",
     "Portfolio",
