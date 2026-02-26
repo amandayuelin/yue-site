@@ -144,7 +144,7 @@ function GitHubSmallIcon() {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 md:py-32">
+    <section id="projects" className="relative py-20 md:py-24">
       {/* Background accent */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute right-1/4 top-0 h-[600px] w-[600px] rounded-full bg-violet-500/3 blur-3xl" />

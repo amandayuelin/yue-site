@@ -17,7 +17,7 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 md:py-32">
+    <section id="about" className="relative py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           variants={containerVariants}
