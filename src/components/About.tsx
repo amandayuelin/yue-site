@@ -45,7 +45,7 @@ export default function About() {
                 <span className="terminal-dot bg-[#febc2e]" />
                 <span className="terminal-dot bg-[#28c840]" />
                 <span className="ml-4 text-xs text-slate-500">
-                  ~/amanda-lin — zsh
+                  amanda.profile — terminal
                 </span>
               </div>
               <div className="terminal-body space-y-3 text-sm leading-7">
@@ -73,11 +73,11 @@ export default function About() {
                 </div>
                 <div className="mt-4">
                   <span className="terminal-prompt">➜ </span>
-                  <span className="terminal-command">cat skills.json | jq .languages</span>
+                  <span className="terminal-command">cat expertise.json | jq .languages</span>
                 </div>
                 <div className="terminal-output">
                   <span className="terminal-string">
-                    [&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;, &quot;TypeScript&quot;, &quot;Python&quot;, &quot;SQL&quot;]
+                    [&quot;Java&quot;, &quot;Kotlin&quot;, &quot;Go&quot;, &quot;C++&quot;, &quot;TypeScript&quot;, &quot;Python&quot;, &quot;SQL&quot;]
                   </span>
                 </div>
                 <div className="mt-4">
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
                 <div className="terminal-output">
                   <span className="terminal-string">
-                    &quot;Building resilient systems that scale across regions and teams&quot;
+                    &quot;Turning complex distributed workflows into reliable platforms that scale across regions and teams&quot;
                   </span>
                 </div>
                 <div className="mt-2">
@@ -127,10 +127,10 @@ export default function About() {
               {/* Fun stats */}
               <div className="grid grid-cols-2 gap-4 pt-4 sm:grid-cols-4">
                 {[
-                  { value: "50+", label: "Regions Impacted" },
-                  { value: "3", label: "Core Platforms" },
-                  { value: "95%", label: "Peak I/O Reduction" },
-                  { value: "∞", label: "Curiosity" },
+                  { value: "📨 Billion+", label: "Events / Day" },
+                  { value: "🧩 3", label: "Tier-1 Platforms" },
+                  { value: "🌍 50+", label: "Regions Supported" },
+                  { value: "🛡️ 24/7", label: "Reliability Mindset" },
                 ].map((stat) => (
                   <div
                     key={stat.label}
