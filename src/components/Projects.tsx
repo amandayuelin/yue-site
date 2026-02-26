@@ -65,36 +65,21 @@ const projects: Project[] = [
     emoji: "🗄️",
   },
   {
-    title: "Cloud Object Storage — Metadata Service",
+    title: "Object Storage Metadata & Dataplane Reliability",
     description:
-      "Designed and implemented a distributed metadata service handling billions of objects across global regions. Built with Java and gRPC, featuring sharded storage, cross-region replication, and sub-millisecond lookup latency.",
-    tags: ["Java", "gRPC", "Distributed Systems", "Protobuf"],
+      "Delivered backend features for large-scale object metadata and dataplane workflows, including rename lifecycle handling, internal pagination behavior, and load-shedding/error paths. Improved end-to-end integration test coverage and release reproducibility for critical API flows, and contributed to storage lifecycle and cleanup reliability plus infrastructure automation for safer multi-region rollouts.",
+    tags: [
+      "Java",
+      "Go",
+      "C++",
+      "gRPC",
+      "Distributed Systems",
+      "Integration Testing",
+      "Reliability",
+      "Terraform",
+    ],
     type: "industry",
     emoji: "☁️",
-  },
-  {
-    title: "High-Performance Storage Data Plane",
-    description:
-      "Developed critical data plane components in C++ and Go for cloud object storage, optimizing I/O paths, memory management, and concurrent request processing to achieve high throughput at scale.",
-    tags: ["C++", "Go", "Performance", "Systems Programming"],
-    type: "industry",
-    emoji: "⚡",
-  },
-  {
-    title: "Infrastructure Automation Platform",
-    description:
-      "Built Terraform-based infrastructure-as-code for multi-region cloud deployments, enabling automated provisioning, configuration management, and zero-downtime rollouts across hundreds of hosts.",
-    tags: ["Terraform", "CI/CD", "Cloud Infra", "Automation"],
-    type: "industry",
-    emoji: "🏗️",
-  },
-  {
-    title: "Storage Lifecycle & Garbage Collection",
-    description:
-      "Designed lifecycle management engines and garbage collection systems for cloud storage, ensuring data integrity and efficient resource reclamation across petabyte-scale environments.",
-    tags: ["Java", "Distributed Systems", "Data Integrity"],
-    type: "industry",
-    emoji: "♻️",
   },
   {
     title: "MysteryEgg — iOS App",
