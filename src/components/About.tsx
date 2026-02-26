@@ -134,10 +134,10 @@ export default function About() {
                 ].map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-lg border border-slate-800 bg-slate-900/50 p-5 text-center"
+                    className="rounded-lg border border-slate-800 bg-slate-900/50 p-4 text-center"
                   >
                     <div className="text-xl leading-none">{stat.icon}</div>
-                    <div className="mt-2 text-4xl font-bold leading-none text-cyan-400">
+                    <div className="mt-2 text-3xl font-bold leading-none tracking-tight text-cyan-400">
                       {stat.value}
                     </div>
                     <div className="mt-2 min-h-[2.5rem] text-xs leading-5 text-slate-500">

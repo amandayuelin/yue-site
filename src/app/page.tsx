@@ -19,15 +19,15 @@ export default function Home() {
 
       <div className="mx-auto h-px max-w-4xl bg-gradient-to-r from-transparent via-violet-500/20 to-transparent" />
 
-      <Skills />
+      <Experience />
 
       <div className="mx-auto h-px max-w-4xl bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
 
-      <Experience />
+      <Projects />
 
       <div className="mx-auto h-px max-w-4xl bg-gradient-to-r from-transparent via-violet-500/20 to-transparent" />
 
-      <Projects />
+      <Skills />
 
       <div className="mx-auto h-px max-w-4xl bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
 
