@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 interface Project {
   title: string;
-  description: string;
+  summary: string;
+  highlights: string[];
   tags: string[];
   type: "industry" | "personal";
   link?: string;
@@ -15,8 +16,13 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Resource Ownership Lookup Platform",
-    description:
-      "Owned and evolved a long-running ownership-lookup platform used by security workflows to resolve team ownership for infrastructure resources. Designed a layered ownership resolution flow (direct mapping, tenancy/compartment inference, claimed ownership data, hostname/hostclass fallbacks, and manual overrides), integrated identity/permissions/team-directory dependencies, and built scheduled data replication and quality checks for multi-region reliability. Improved lookup coverage, reduced unresolved-owner cases, and strengthened observability with source-level metrics and error classification.",
+    summary:
+      "Tier-1 ownership resolution service used by security and operations workflows.",
+    highlights: [
+      "Designed layered resolution flow across direct mappings, tenancy inference, claimed data, and controlled overrides.",
+      "Integrated identity and team-directory dependencies with periodic replication checks for multi-region consistency.",
+      "Improved lookup coverage and observability through source-level metrics and error classification.",
+    ],
     tags: [
       "Java",
       "Dropwizard",
@@ -31,8 +37,13 @@ const projects: Project[] = [
   },
   {
     title: "Cloud Events Platform (Control, Ingestion, Routing, Actions)",
-    description:
-      "Contributed for multiple years across a distributed event platform composed of control, ingestion, routing, and action-execution services. Implemented and maintained rule lifecycle APIs, rule-cache synchronization, and high-throughput event pipelines that convert incoming audit/events into action messages. Worked on reliability features including retry streams, backoff policies, health checks, dynamic region/cert loading, and production telemetry to keep event delivery resilient at scale.",
+    summary:
+      "Distributed event platform for rule management, ingestion, routing, and action delivery.",
+    highlights: [
+      "Implemented rule lifecycle APIs and rule-cache synchronization across control and ingestion paths.",
+      "Built and tuned Kafka-driven pipelines that convert incoming events into downstream actions.",
+      "Hardened reliability with retry streams, backoff policies, health checks, and production telemetry.",
+    ],
     tags: [
       "Java",
       "Dropwizard",
@@ -48,8 +59,13 @@ const projects: Project[] = [
   },
   {
     title: "Large-Scale Inventory Database Optimization",
-    description:
-      "Owned inventory database optimization in a shared multi-tenant Oracle environment. Led investigation of heavy merge/query workloads, designed and implemented scheduled retention-based cleanup procedures for large source/report tables, and coordinated table redefinition rollout. Worked across the Kotlin/Spring worker pipeline (collectors, ingestors, and reporting jobs) to make data lifecycle controls reliable in production. Delivered sustained impact by reducing allocated PDB space by about 90% and lowering I/O throughput from ~5 GB/s to ~250 MB/s (~95% improvement).",
+    summary:
+      "Performance and lifecycle optimization for a large multi-tenant Oracle inventory database.",
+    highlights: [
+      "Diagnosed merge/query bottlenecks and delivered retention-based cleanup procedures for large source/report tables.",
+      "Coordinated rollout across Kotlin/Spring workers (collectors, ingestors, and reporting jobs).",
+      "Reduced allocated PDB space by about 90% and dropped I/O from ~5 GB/s to ~250 MB/s (~95%).",
+    ],
     tags: [
       "SQL",
       "PL/SQL",
@@ -66,8 +82,13 @@ const projects: Project[] = [
   },
   {
     title: "Object Storage Metadata & Dataplane Reliability",
-    description:
-      "Delivered backend features for large-scale object metadata and dataplane workflows, including rename lifecycle handling, internal pagination behavior, and load-shedding/error paths. Improved end-to-end integration test coverage and release reproducibility for critical API flows, and contributed to storage lifecycle and cleanup reliability plus infrastructure automation for safer multi-region rollouts.",
+    summary:
+      "Backend reliability and API delivery across object metadata and dataplane workflows.",
+    highlights: [
+      "Built and validated features across rename lifecycle, internal pagination, and load-shedding/error paths.",
+      "Expanded integration-test coverage to improve release confidence for critical API flows.",
+      "Contributed to storage lifecycle cleanup reliability and safer multi-region rollout automation.",
+    ],
     tags: [
       "Java",
       "Go",
@@ -83,8 +104,13 @@ const projects: Project[] = [
   },
   {
     title: "MysteryEgg — iOS App",
-    description:
-      "A delightful iOS application built with SwiftUI featuring engaging animations, intuitive UX patterns, and modern iOS design principles. A fun personal project exploring Apple's latest frameworks.",
+    summary:
+      "SwiftUI iOS app focused on delightful interactions and polished product feel.",
+    highlights: [
+      "Built modern SwiftUI interfaces with smooth animation and interaction patterns.",
+      "Iterated on user flows to improve clarity, responsiveness, and visual consistency.",
+      "Used the project to deepen mobile product sense and end-to-end app craftsmanship.",
+    ],
     tags: ["Swift", "SwiftUI", "iOS", "Mobile"],
     type: "personal",
     link: "https://github.com/amandayuelin/MysteryEgg",
@@ -92,8 +118,13 @@ const projects: Project[] = [
   },
   {
     title: "Personal Portfolio Website",
-    description:
-      "This very site! A modern, animated portfolio built with Next.js 16, React 19, Tailwind CSS 4, and Framer Motion. Features particle animations, scroll reveals, and a dark engineer aesthetic.",
+    summary:
+      "Responsive personal site to present platform engineering experience and technical depth.",
+    highlights: [
+      "Built with Next.js, React, TypeScript, Tailwind CSS, and Framer Motion.",
+      "Designed reusable sections for experience, projects, and skills with clear resume-style flow.",
+      "Focused on performance, readability, and cohesive visual polish across devices.",
+    ],
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     type: "personal",
     link: "https://github.com/amandayuelin/amandayuelin.github.io",
@@ -225,10 +256,21 @@ export default function Projects() {
                   {project.title}
                 </h3>
 
-                {/* Description */}
-                <p className="mb-5 flex-1 text-sm leading-relaxed text-slate-400">
-                  {project.description}
+                {/* Summary + highlights */}
+                <p className="mb-3 text-sm leading-relaxed text-slate-400">
+                  {project.summary}
                 </p>
+                <ul className="mb-5 flex-1 space-y-1.5 text-sm leading-relaxed text-slate-400">
+                  {project.highlights.map((item, idx) => (
+                    <li
+                      key={`${project.title}-highlight-${idx}`}
+                      className="flex items-start gap-2"
+                    >
+                      <span className="mt-1 text-cyan-400">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
